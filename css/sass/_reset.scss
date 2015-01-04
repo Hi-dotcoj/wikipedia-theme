@@ -1,0 +1,31 @@
+html {
+    opacity: 0 !important;
+    font-size: 62.5%;
+    transition: opacity .3s;
+    &.show {
+        opacity: 1 !important;
+    }
+}
+body {
+    min-width: 768px;
+    margin: 0;
+    font-family: "Georgia", serif;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+}

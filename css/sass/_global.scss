@@ -1,0 +1,31 @@
+/* FONT */
+@font-face {
+	font-family: 'icons';
+    src: url('chrome-extension://__MSG_@@extension_id__/font/icons.ttf?s6i04q') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.font-icon {
+	font-family: 'icons';
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+.icon-logo:before {content: "\e600";}
+
+
+
+
+*/
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}

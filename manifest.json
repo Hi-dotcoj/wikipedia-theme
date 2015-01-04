@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Wikipedia Theme",
+    "version": "0.0.1",
+    "default_locale": "en",
+    "description": "Theme for a Wikipedia more beaufiful and readable.",
+    "icons": {
+        "16": "icons/icon16.png",
+        "19": "icons/icon19.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "permissions": ["tabs", "*://*.wikipedia.org/wiki/*"],
+    "web_accessible_resources": [
+        "font/*.ttf"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.wikipedia.org/wiki/*", "*://*.wikipedia.org/w/*"],
+            "css": ["css/styles.css"],
+            "js": ["js/vendor/jquery-1.11.2.min.js", "js/script.js"],
+            "run_at" : "document_start"
+        }
+    ]
+}
