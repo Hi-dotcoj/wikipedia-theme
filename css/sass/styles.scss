@@ -564,6 +564,10 @@
 
 /* Indice */
 // ===================================================================
+.toctoggle,
+.togglelink {
+    display: none;
+}
 #toc.toc {
     position: fixed;
     top: 160px;
